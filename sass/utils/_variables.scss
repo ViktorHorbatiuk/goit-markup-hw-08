@@ -1,0 +1,29 @@
+:root {
+  --font-main: "Roboto", sans-serif;
+  --font-secondary: "Raleway", sans-serif;
+  --black-main: #212121;
+  --white: #ffffff;
+  --blue: #2196f3;
+  --gray: #757575;
+  --light-gray: rgba(255, 255, 255, 0.6);
+  --comment-color: rgba(117, 117, 117, 0.5);
+  --bg-LightGray: #f5f4fa;
+  --bg-TransparentBlack: rgba(47, 48, 58, 0.8);
+  --bg-overlay: rgba(33, 150, 243, 0.9);
+  --bg-footer: #2f303a;
+  --bg-foter-icon: rgba(255, 255, 255, 0.1);
+  --shadows-1: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --shadows-2: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --shadows-overlay: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --shadows-category: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  --shadows-ButtonDesign: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --header-border: #ececec;
+  --category-border: #eeeeee;
+  --foter-input-border: rgba(255, 255, 255, 0.3);
+  --close-btn-border: rgba(0, 0, 0, 0.1);
+  --modal-border: rgba(33, 33, 33, 0.2);
+  --fill-gray: #afb1b8;
+}

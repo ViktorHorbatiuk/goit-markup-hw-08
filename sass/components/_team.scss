@@ -1,0 +1,60 @@
+.bg-section {
+  width: 100%;
+  height: auto;
+  background: var(--bg-LightGray);
+  padding: 60px 0;
+  margin: 0 auto;
+  @include mq(desktop) {
+    max-width: 1600px;
+    height: 708px;
+    margin-top: 94px;
+  }
+}
+.team-container {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.middle-title--team {
+  margin-bottom: 50px;
+}
+.team-card {
+  width: 450px;
+  height: auto;
+  gap: 30px;
+  background: var(--white);
+  box-shadow: var(--shadows-2);
+  border-radius: 0px 0px 4px 4px;
+  @include mq(phone) {
+    width: 450px;
+    height: 622px;
+  }
+  @include mq(tablet) {
+    width: 354px;
+    height: 536px;
+  }
+  @include mq(desktop) {
+    width: 270px;
+    height: 428px;
+  }
+}
+.team-card__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-main);
+  margin: 30px 0 10px;
+}
+.team-card__trade {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--gray);
+}
+.social-networks--team {
+  margin: 0 auto 24px;
+}

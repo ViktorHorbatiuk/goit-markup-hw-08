@@ -1,0 +1,133 @@
+.btn-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 34px;
+}
+.secondary-btn {
+  height: 38px;
+  background: var(--bg-LightGray);
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  padding: 6px 22px 6px 22px;
+
+  &:hover {
+  background: var(--blue);
+  box-shadow: var(--shadows-ButtonDesign);
+  color: var(--white);
+}
+
+}
+.secondary-btn__text {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.btn-list__button:nth-child(1) {
+  width: 121px;
+}
+.btn-list__button:nth-child(2) {
+  width: 93px;
+}
+.btn-list__button:nth-child(3) {
+  width: 114px;
+}
+.btn-list__button:nth-child(4) {
+  width: 91px;
+}
+.btn-list__button:nth-child(5) {
+  width: 121px;
+}
+.btn-list__button:not(:last-child) {
+  margin-right: 8px;
+}
+.categories {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.categories_card {
+  padding-right: 30px;
+  padding-bottom: 30px;
+  width: 370px;
+  height: 404px;
+
+  &:nth-child(3n) {
+  padding-right: 0;
+}
+
+}
+
+.categories__wrapper {
+  box-sizing: border-box;
+  border: 1px solid var(--category-border);
+  width: 370px;
+  height: 404px;
+
+  &:hover {
+  cursor: pointer;
+  box-shadow: var(--shadows-category);
+}
+
+}
+.categories__box {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  width: 370px;
+  height: 294px;
+
+  &:hover .categories__overlay {
+  transform: translateY(0);
+}
+
+}
+.categories__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-overlay);
+  box-shadow: var(--box-shadow-overlay);
+  transform: translateY(101%);
+  transition: transform 250ms;
+}
+.categories__overlay > p {
+  position: absolute;
+  width: 301px;
+  height: 196px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  padding: 49px 45px 49px 24px;
+}
+.categories__title {
+  width: 322px;
+  height: 36px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--black-main);
+  padding: 20px 24px 4px;
+}
+.categories__type {
+  width: 322px;
+  height: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--gray);
+  margin: 4px 24px 20px;
+}

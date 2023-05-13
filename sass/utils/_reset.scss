@@ -1,0 +1,38 @@
+body {
+  background: var(--white);
+  font-style: normal;
+  font-family: var(--font-main);
+  margin: 0;
+  padding: 0;
+  color: var(--black-main);
+}
+:hover,
+:focus {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+h1,
+h2,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+

@@ -1,0 +1,50 @@
+.middle-title--clients {
+  padding-bottom: 14px;
+  margin-top: 60px;
+}
+
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  
+  @include mq(desktop) {
+    flex-wrap: nowrap;
+    margin-bottom: 86px;
+  }
+}
+
+.clients-list {
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.clients__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--fill-gray);
+  border: 1px solid var(--fill-gray);
+  border-radius: 4px;
+  width: 208px;
+  height: 92px;
+  
+  @include mq(tablet) {
+    width: 224px;
+    height: 92px;
+  }
+  @include mq(desktop) {
+    width: 170px;
+    height: 92px;
+  }
+}
+
+.clients__card:hover,
+.clients__card:focus {
+  cursor: pointer;
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  fill: var(--blue);
+}
+

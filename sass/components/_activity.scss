@@ -1,0 +1,40 @@
+.activity {
+  display: none;
+  @include mq(desktop) {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 386px;
+  }
+}
+
+.activity-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.activity-list__item {
+  position: relative;
+}
+
+.middle-title--activity {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.label {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  background: var(--bg-TransparentBlack);
+  display: block;
+  top: 224px;
+}
+.small-title--label {
+  color: var(--white);
+  margin-top: 27px;
+  text-align: center;
+}
+

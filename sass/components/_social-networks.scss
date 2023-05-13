@@ -1,0 +1,22 @@
+.social-networks {
+  width: 206px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.social-networks__logo {
+  fill: var(--fill-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  &:hover {
+  cursor: pointer;
+  background-color: var(--blue);
+  fill: var(--white);
+}
+}
