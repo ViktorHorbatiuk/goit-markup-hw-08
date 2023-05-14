@@ -1,3 +1,18 @@
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 450px;
+    height: 609px;
+    transform: translate(-50%, -50%);
+    background: var(--white);
+    box-shadow: var(--shadows-2);
+    border-radius: 4px;
+    @include mq(desktop) {
+    width: 528px;
+    min-height: 581px;
+    }
+}
 .close-btn {
   position: absolute;
   top: 8px;
@@ -9,39 +24,32 @@
   border-radius: 50%;
   cursor: pointer;
 }
-.modal {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
-  background: var(--white);
-  box-shadow: var(--shadows-2);
-  border-radius: 4px;
-}
 .modal__form {
+  position: absolute;
+  left: 0;
+  top: 40px;
   display: block;
   width: 448px;
-  margin-left: 40px;
+  height: auto;
 }
 .modal__title {
+  width: 370px;
   position: absolute;
-  top: 26px;
+  top: 0;
   left: 40px;
-  width: 448px;
   margin: 0;
   text-align: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--black-main);
+  @include mq(desktop) {
+    width: 448px;
+  }
 }
 .modal__label {
   display: block;
-  width: 448px;
-  height: 58px;
   box-sizing: border-box;
   font-family: var(--font-main);
   font-style: normal;
@@ -51,30 +59,39 @@
   letter-spacing: 0.01em;
   color: var(--gray);
   &:focus-within {
-  fill: var(--blue);
-}
+    fill: var(--blue);
+  }
 }
 .modal__label:nth-of-type(1) {
   position: absolute;
   top: 61px;
   left: 40px;
+  @include mq(desktop) {
+    top: 35px;
+  }
 }
 .modal__label:nth-of-type(2) {
   position: absolute;
   top: 129px;
   left: 40px;
+  @include mq(desktop) {
+    top: 103px;
+  }
 }
 .modal__label:nth-of-type(3) {
   position: absolute;
   top: 197px;
   left: 40px;
+   @include mq(desktop) {
+    top: 171px;
+  }
 }
 .modal__input {
   position: absolute;
-  top: 18px;
   left: 0;
+  top: 18px;
   box-sizing: border-box;
-  width: 448px;
+  width: 370px;
   height: 40px;
   padding-left: 42px;
   border: 1px solid var(--modal-border);
@@ -82,7 +99,10 @@
   outline: none;
   &:hover,
   &:focus {
-  border: 1px solid var(--blue);
+    border: 1px solid var(--blue);
+  }
+  @include mq(desktop) {
+    width: 448px;
   }
 }
 .modal__icon {
@@ -103,13 +123,16 @@
   line-height: 14px;
   letter-spacing: 0.01em;
   color: var(--gray);
+   @include mq(desktop) {
+    top: 239px;
+  }
 }
 .modal__comment {
   position: absolute;
   top: 18px;
   left: 0;
   box-sizing: border-box;
-  width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid var(--modal-border);
   border-radius: 4px;
@@ -126,32 +149,47 @@
   &:hover,
   &:focus {
   border: 1px solid var(--blue);
-  }
+}
+@include mq(desktop) {
+  width: 448px;
+  top: 18px;
+}
 }
 .modal__checkbox {
   position: absolute;
-  top: 423px;
-  left: 79px;
-  width: 395px;
-  height: 24px;
+  top: 420px;
+  left: 64px;
+  width: 346px;
+  height: 14px;
   font-family: var(--font-main);
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--gray);
   cursor: pointer;
   &::before {
-  position: absolute;
-  left: -24px;
-  top: 1px;
-  content: "";
-  width: 16px;
-  height: 16px;
-  border: 2px solid var(--black-main);
-  border-radius: 2px;
-}
+    position: absolute;
+    left: -24px;
+    top: -5px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--black-main);
+    border-radius: 2px;
+    @include mq(desktop) {
+      top: 1px;
+    }
+  }
+  @include mq(desktop) {
+    width: 395px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 1.7;
+    top: 397px;
+    left: 79px;
+  }
 }
 .modal-checkbox:checked + .modal__checkbox::before {
   background: var(--blue);
@@ -159,17 +197,24 @@
 }
 .checkbox-icon {
   position: absolute;
-  top: 5px;
+  top: -2px;
   left: -22px;
+  @include mq(desktop) {
+    top: 5px;
+  }
 }
 .modal__links {
   color: var(--blue);
 }
 .main-btn--form {
   position: absolute;
-  left: 164px;
-  top: 491px;
+  left: 125px;
+  top: 479px;
   display: flex;
   justify-content: center;
   align-items: center;
+  @include mq(desktop) {
+    left: 164px;
+    top: 451px;
+  }
 }
