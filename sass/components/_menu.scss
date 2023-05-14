@@ -1,6 +1,4 @@
 .menu-toggle {
-  // min-height: 40px;
-  // min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,9 +32,9 @@
   transform: translateX(0);
 }
 .menu-container .menu-toggle {
-  position: absolute;
+  position: fixed;
   top: 21px;
-  left: 436px;
+  right: 26px;
   fill: var(--black-main);
 }
 .menu-container a {
