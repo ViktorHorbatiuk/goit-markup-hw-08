@@ -4,20 +4,29 @@
   margin: 0;
   left: 40px;
   top: 48px;
-  &__item {
-    display: block;
-    margin-bottom: 30px;
-  }
-  &__item--link {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: var(--black-main);
-  }
 }
-.nav-links {
+  .nav-menu__item {
+    display: block;
+    margin-bottom: 36px;
+
+      &:hover,
+      &:focus {
+      color: var(--blue);
+  }
+
+    &--portfolio {
+      margin-bottom: 32px;
+    }
+    &--link {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: var(--black-main);
+    }
+  }
+    .nav-links {
   position: absolute;
   margin: 0;
   padding: 0;
@@ -26,6 +35,7 @@
   &__link {
     display: block;
     margin-top: 32px;
+    margin-bottom: 64px;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.16;

@@ -25,7 +25,6 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
   background-color: var(--white);
   z-index: 999;
   transform: translateX(100%);
@@ -36,8 +35,8 @@
 }
 .menu-container .menu-toggle {
   position: absolute;
-  top: 10px;
-  right: 75px;
+  top: 21px;
+  left: 396px;
   fill: var(--black-main);
 }
 .menu-container a {
