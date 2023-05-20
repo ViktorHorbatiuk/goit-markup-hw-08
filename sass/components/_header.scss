@@ -17,55 +17,40 @@
 }
 @media screen and (min-width: 768px) {
   .navigation {
-      list-style-type: none;
-      display: flex;
-      align-items: center;
-      }
-  .navigation__item {
-      display:flex;
-      margin-top: 32px;
-      margin-bottom: 32px;
-    
-      &:not(:last-child) {
-        margin-right: 46px;
-        }
-      }
-.navigation__link {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--black-main);
-
-  &:hover,
-  &:focus {
-    color: var(--blue);
+    list-style-type: none;
+    display: flex;
+    align-items: center;
   }
-  
+  .navigation__item {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    &:not(:last-child) {
+      margin-right: 46px;
+    }
+  }
+  .navigation__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--black-main);
+
+    &:hover,
+    &:focus {
+      color: var(--blue);
+    }
   }
   .navigation__link--contacts {
-      color: var(--gray);
-}
-.navigation__link--agency {
+    color: var(--gray);
+  }
+  .navigation__link--agency {
     position: relative;
-  
-    &::after {
-  content: "";
-  position: absolute;
-  width: 53px;
-  height: 4px;
-  background: var(--blue);
-  border-radius: 2px;
-  top: 45px;
-  left: 0;
-}
-}
-.navigation__link--portfolio {
-    position: relative;
-  
+
     &::after {
       content: "";
       position: absolute;
@@ -74,10 +59,24 @@
       background: var(--blue);
       border-radius: 2px;
       top: 45px;
-      left: 2px;
+      left: 0;
     }
-}
-.navigation-links {
+  }
+  .navigation__link--portfolio {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 53px;
+      height: 4px;
+      background: var(--blue);
+      border-radius: 2px;
+      top: 45px;
+      left: 52px;
+    }
+  }
+  .navigation-links {
     list-style: none;
     display: flex;
     justify-items: flex-end;
@@ -86,21 +85,19 @@
     gap: 10px;
   }
   .navigation-links__icon {
-      margin-right: 10px;
-      fill: var(--gray);
-    
-      &:hover,
-      &:focus {
-        cursor: pointer;
-        fill: var(--blue);
-      }
-      
-      }
-      
+    margin-right: 10px;
+    fill: var(--gray);
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      fill: var(--blue);
     }
+  }
+}
 
 @media screen and (min-width: 1200px) {
-.navigation-links {
+  .navigation-links {
     gap: 30px;
-  }   
-    }
+  }
+}

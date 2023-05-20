@@ -13,8 +13,8 @@
     margin-bottom: 14px;
   }
   @include mq(desktop) {
-   margin-top: 94px;
-   margin-bottom: 34px;
+    margin-top: 94px;
+    margin-bottom: 34px;
   }
 }
 .secondary-btn {
@@ -42,25 +42,25 @@
   }
   &--strony {
     width: 128px;
-      @include mq(desktop) {
+    @include mq(desktop) {
       width: 93px;
     }
   }
   &--aplikacje {
     width: 145px;
-      @include mq(desktop) {
+    @include mq(desktop) {
       width: 114px;
     }
   }
   &--dizajn {
     width: 103px;
-      @include mq(desktop) {
+    @include mq(desktop) {
       width: 91px;
     }
   }
   &--marketing {
     width: 130px;
-      @include mq(desktop) {
+    @include mq(desktop) {
       width: 121px;
     }
   }
@@ -71,7 +71,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1,6;
+  line-height: 1, 6;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -89,9 +89,8 @@
   height: 404px;
 
   &:nth-child(3n) {
-  padding-right: 0;
-}
-
+    padding-right: 0;
+  }
 }
 
 .categories__wrapper {
@@ -101,10 +100,9 @@
   height: 404px;
 
   &:hover {
-  cursor: pointer;
-  box-shadow: var(--shadows-category);
-}
-
+    cursor: pointer;
+    box-shadow: var(--shadows-category);
+  }
 }
 .categories__box {
   margin: 0;
@@ -114,9 +112,8 @@
   height: 294px;
 
   &:hover .categories__overlay {
-  transform: translateY(0);
-}
-
+    transform: translateY(0);
+  }
 }
 .categories__overlay {
   position: absolute;
