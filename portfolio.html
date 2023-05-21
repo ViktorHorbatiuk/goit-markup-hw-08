@@ -34,12 +34,12 @@
             <li class="navigation__item">
               <a
                 href="./index.html"
-                class="navigation__link"
+                class="navigation__link navigation__link--agency"
                 >Agencja</a
               >
             </li>
             <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__link navigation__link--portfolio">Portfolio</a>
+              <a href="./portfolio.html" class="navigation__link">Portfolio</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link">Kontakt</a>
@@ -78,7 +78,7 @@
       </div>
     </header>
     <main>
-      <section class="container">
+      <section class="section container">
         <ul class="btn-list">
           <li class="btn-list__button">
             <button
@@ -122,7 +122,7 @@
           </li>
         </ul>
         <ul class="categories">
-          <li class="categories_card">
+          <li>
             <div class="categories__wrapper">
               <div class="categories__box">
                 <img
@@ -153,7 +153,7 @@
               <p class="categories__type">Strona internetowa</p>
             </div>
           </li>
-          <li class="categories_card">
+          <li>
             <div class="categories__wrapper">
               <div class="categories__box">
                 <img
@@ -186,7 +186,7 @@
               <p class="categories__type">Dizajn</p>
             </div>
           </li>
-          <li class="categories_card">
+          <li>
             <div class="categories__wrapper">
               <div class="categories__box">
                 <img
@@ -217,7 +217,7 @@
               <p class="categories__type">Aplikacja</p>
             </div>
           </li>
-          <li class="categories_card">
+          <li>
             <div class="categories__wrapper">
               <div class="categories__box">
                 <img
@@ -248,7 +248,7 @@
               <p class="categories__type">Marketing</p>
             </div>
           </li>
-          <li class="categories_card">
+          <li>
             <div class="categories__wrapper">
               <div class="categories__box">
                 <img
@@ -279,7 +279,7 @@
               <p class="categories__type">Aplikacja</p>
             </div>
           </li>
-          <li class="categories_card">
+          <li>
             <div class="categories__wrapper">
               <div class="categories__box">
                 <img
@@ -310,7 +310,7 @@
               <p class="categories__type">Strona internetowa</p>
             </div>
           </li>
-          <li class="categories_card">
+          <li>
             <div class="categories__wrapper">
               <div class="categories__box">
                 <img
@@ -341,7 +341,7 @@
               <p class="categories__type">Dizajn</p>
             </div>
           </li>
-          <li class="categories_card">
+          <li>
             <div class="categories__wrapper">
               <div class="categories__box">
                 <img
@@ -372,7 +372,7 @@
               <p class="categories__type">Marketing</p>
             </div>
           </li>
-          <li class="categories_card">
+          <li>
             <div class="categories__wrapper">
               <div class="categories__box">
                 <img
@@ -406,80 +406,107 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
+  <footer class="section footer">
       <div class="container container--footer">
-        <div class="footer__nav">
-          <a href="/" class="logo logo--footer"
-            ><span class="logo--web">Web</span>Studio</a
-          >
-          <ul class="contacts">
-            <li class="contacts__element">
-              <address class="contacts__element--address">
-                m. Warszawa, Aleje Jerozolimskie 21
-              </address>
-            </li>
-            <li class="contacts__element">
-              <a
-                href="mailto:info@example.com"
-                class="contacts__element--contact"
-                >info@example.com</a
-              >
-            </li>
-            <li class="contacts__element">
-              <a href="tel:+48111111111" class="contacts__element--contact"
-                >+48 111 111 111</a
-              >
-            </li>
-          </ul>
+      <div class="footer__nav">
+      <a href="/" class="logo logo--footer"
+        ><span class="logo--web">Web</span>Studio</a
+      >
+        <ul class="contacts">
+          <li class="contacts__element"><address class="contacts__element--address">
+        m. Warszawa, Aleje Jerozolimskie 21
+      </address></li>
+          <li class="contacts__element">
+            <a href="mailto:info@example.com" class="contacts__element--contact"
+            >info@example.com</a
+            >
+          </li>
+          <li class="contacts__element">
+            <a href="tel:+48111111111" class="contacts__element--contact">+48 111 111 111</a>
+          </li>
+        </ul>
         </div>
         <div class="social-links">
-          <span class="small-title small-title--footer">DOŁĄCZ DO NAS</span>
-          <div class="social-networks social-networks--footer">
-            <div class="social-networks__logo social-networks__logo--footer">
-              <svg width="20" height="20">
-                <use href=".//images/icons.svg#icon-instagram-2"></use>
-              </svg>
+          <span class="small-title small-title--footer">DOŁĄCZ DO NAS</span> 
+           <div class="social-networks social-networks--footer">
+                <div class="social-networks__logo social-networks__logo--footer">
+                  <svg width="20" height="20">
+                    <use href=".//images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </div>
+                <div class="social-networks__logo social-networks__logo--footer">
+                  <svg width="20" height="20">
+                    <use href=".//images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </div>
+                <div class="social-networks__logo social-networks__logo--footer">
+                  <svg width="20" height="20">
+                    <use href=".//images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </div>
+                <div class="social-networks__logo social-networks__logo--footer">
+                  <svg width="20" height="20">
+                    <use href=".//images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </div>
             </div>
-            <div class="social-networks__logo social-networks__logo--footer">
-              <svg width="20" height="20">
-                <use href=".//images/icons.svg#icon-twitter-1"></use>
-              </svg>
-            </div>
-            <div class="social-networks__logo social-networks__logo--footer">
-              <svg width="20" height="20">
-                <use href=".//images/icons.svg#icon-facebook-1"></use>
-              </svg>
-            </div>
-            <div class="social-networks__logo social-networks__logo--footer">
-              <svg width="20" height="20">
-                <use href=".//images/icons.svg#icon-linkedin-1"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
+       </div>
 
-        <form class="newsletter">
-          <label class="small-title small-title--footer">
-            Zapisz się do newslettera
-            <input
-              type="email"
-              placeholder="E-mail"
-              class="newsletter__input"
-              name="email"
-              id="newsletter"
-            />
-          </label>
-
-          <button type="submit" class="main-btn main-btn--footer">
-            <span class="main-btn__text main-btn__text--footer"
-              >Zapisz się</span
-            >
-            <svg width="24" height="24">
-              <use href=".//images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
+       <form class="newsletter">
+        <label class="small-title small-title--footer">
+          Zapisz się do newslettera
+          <input type="email" placeholder="E-mail" class="newsletter__input" name="email" id="newsletter" />
+        </label>
+       
+        <button type="submit" class="main-btn main-btn--footer">
+          <span class="main-btn__text main-btn__text--footer">Zapisz się</span>
+           <svg width="24" height="24">
+                    <use href=".//images/icons.svg#icon-send"></use>
+                  </svg>
+        </button>
+      </form>
       </div>
-    </footer>
+      </footer>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-container__icon" width="18.67" height="18.67">
+          <use href="./images/icons.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-menu__item">
+          <a href="./index.html" class="nav-menu__item--link">Agencja</a>
+        </li>
+        <li class="nav-menu__item nav-menu__item--portfolio">
+          <a href="./portfolio.html" class="nav-menu__item--link">Portfolio</a>
+        </li>
+        <li class="nav-menu__item">
+          <a class="nav-menu__item--link">Kontakt</a>
+        </li>
+      </ul>
+      <ul class="nav-links">
+        <li>
+          <a
+            href="tel:+48111111111"
+            class=" nav-links__link--tel"
+            >+48111111111</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="nav-links__link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="nav-social">
+        <li class="nav-social__item">Instagram</li>
+        <li class="nav-social__item">Twitter</li>
+        <li class="nav-social__item">Facebook</li>
+        <li class="nav-social__item">LinkedIn</li>
+      </ul>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

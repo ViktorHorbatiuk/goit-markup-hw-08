@@ -2,7 +2,7 @@
   display: none;
   @include mq(desktop) {
     display: block;
-    margin: 0;
+    margin-bottom: 94px;
     padding: 0;
     height: 386px;
   }
@@ -17,11 +17,6 @@
 
 .activity-list__item {
   position: relative;
-}
-
-.middle-title--activity {
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .label {

@@ -1,0 +1,6 @@
+.section {
+    padding: 60px 0;
+    @include mq(desktop) {
+        padding: 94px 0;
+    }
+}

@@ -2,19 +2,22 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 450px;
+    width: 320px;
     height: 609px;
     transform: translate(-50%, -50%);
     background: var(--white);
     box-shadow: var(--shadows-2);
     border-radius: 4px;
+    @include mq(phone) {
+      width: 450px;
+    }
     @include mq(desktop) {
     width: 528px;
     min-height: 581px;
     }
 }
 .close-btn {
-  position: absolute;
+  position: fixed;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -26,17 +29,21 @@
 }
 .modal__form {
   position: absolute;
-  left: 0;
+  left: -30px;
   top: 40px;
   display: block;
-  width: 448px;
+  width: 320px;
   height: auto;
+  @include mq(phone) {
+    left: 0;
+    width: 448px;
+  }
 }
 .modal__title {
-  width: 370px;
+  width: 320px;
   position: absolute;
   top: 0;
-  left: 40px;
+  left: 30px;
   margin: 0;
   text-align: center;
   font-weight: 700;
@@ -44,6 +51,10 @@
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--black-main);
+  @include mq(phone) {
+    width: 370px;
+    left: 40px;
+  }
   @include mq(desktop) {
     width: 448px;
   }
@@ -91,7 +102,7 @@
   left: 0;
   top: 18px;
   box-sizing: border-box;
-  width: 370px;
+  width: 300px;
   height: 40px;
   padding-left: 42px;
   border: 1px solid var(--modal-border);
@@ -100,6 +111,9 @@
   &:hover,
   &:focus {
     border: 1px solid var(--blue);
+  }
+  @include mq(phone) {
+    width: 370px;
   }
   @include mq(desktop) {
     width: 448px;
@@ -114,7 +128,7 @@
   position: absolute;
   top: 265px;
   left: 40px;
-  width: 448px;
+  width: 300px;
   height: 138px;
   font-family: var(--font-main);
   font-style: normal;
@@ -123,7 +137,10 @@
   line-height: 14px;
   letter-spacing: 0.01em;
   color: var(--gray);
-   @include mq(desktop) {
+    @include mq(phone) {
+      width: 370px;
+    }
+    @include mq(desktop) {
     top: 239px;
   }
 }
@@ -132,7 +149,7 @@
   top: 18px;
   left: 0;
   box-sizing: border-box;
-  width: 370px;
+  width: 300px;
   height: 120px;
   border: 1px solid var(--modal-border);
   border-radius: 4px;
@@ -150,6 +167,9 @@
   &:focus {
   border: 1px solid var(--blue);
 }
+@include mq(phone) {
+  width: 370px;
+}
 @include mq(desktop) {
   width: 448px;
   top: 18px;
@@ -159,7 +179,7 @@
   position: absolute;
   top: 420px;
   left: 64px;
-  width: 346px;
+  width: 300px;
   height: 14px;
   font-family: var(--font-main);
   font-style: normal;
@@ -182,6 +202,10 @@
       top: 1px;
     }
   }
+   @include mq(phone) {
+        width: 346px;
+        height: 14px;
+    }
   @include mq(desktop) {
     width: 395px;
     height: 24px;
@@ -208,11 +232,14 @@
 }
 .main-btn--form {
   position: absolute;
-  left: 125px;
+  left: 90px;
   top: 479px;
   display: flex;
   justify-content: center;
   align-items: center;
+  @include mq(phone) {
+    left: 125px;
+  }
   @include mq(desktop) {
     left: 164px;
     top: 451px;

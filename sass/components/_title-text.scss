@@ -11,6 +11,10 @@
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
 }
 .small-text {
   font-weight: 400;

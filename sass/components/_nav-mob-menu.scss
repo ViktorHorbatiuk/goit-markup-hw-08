@@ -9,11 +9,6 @@
     display: block;
     margin-bottom: 36px;
 
-      &:hover,
-      &:focus {
-      color: var(--blue);
-  }
-
     &--portfolio {
       margin-bottom: 32px;
     }
@@ -24,6 +19,10 @@
       text-align: center;
       letter-spacing: 0.02em;
       color: var(--black-main);
+      &:hover,
+      &:focus {
+      color: var(--blue);
+  }
     }
   }
     .nav-links {

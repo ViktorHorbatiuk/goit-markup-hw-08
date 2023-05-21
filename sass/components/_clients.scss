@@ -1,16 +1,9 @@
-.middle-title--clients {
-  padding-bottom: 14px;
-  margin-top: 60px;
-}
-
 .clients {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 60px;
-  
   @include mq(desktop) {
     flex-wrap: nowrap;
-    margin-bottom: 86px;
+    margin-bottom: 94px;
   }
 }
 

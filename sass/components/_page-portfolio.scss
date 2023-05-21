@@ -5,16 +5,13 @@
   column-gap: 8px;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 44px;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   @include mq(tablet) {
     justify-content: center;
-    margin-top: 60px;
-    margin-bottom: 14px;
+    margin-bottom: 30px;
   }
   @include mq(desktop) {
-    margin-top: 94px;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
   }
 }
 .secondary-btn {
@@ -79,36 +76,40 @@
 .categories {
   list-style-type: none;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-.categories_card {
-  padding-right: 30px;
-  padding-bottom: 30px;
-  width: 370px;
-  height: 404px;
-
-  &:nth-child(3n) {
-    padding-right: 0;
+  row-gap: 30px;
+  @include mq(tablet) {
+    gap: 30px;
+    justify-content: flex-start;
   }
 }
 
 .categories__wrapper {
   box-sizing: border-box;
   border: 1px solid var(--category-border);
-  width: 370px;
-  height: 404px;
-
   &:hover {
     cursor: pointer;
     box-shadow: var(--shadows-category);
+  }
+  @include mq(phone) {
+    width: 450;
+    height: 404;
+  }
+  @include mq(tablet) {
+    width: 354px;
+    height: 440px;
+  }
+  @include mq(desktop) {
+    width: 370px;
   }
 }
 .categories__box {
   margin: 0;
   position: relative;
   overflow: hidden;
-  width: 370px;
+  width: 100%;
   height: 294px;
 
   &:hover .categories__overlay {
@@ -138,22 +139,26 @@
   padding: 49px 45px 49px 24px;
 }
 .categories__title {
-  width: 322px;
-  height: 36px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--black-main);
-  padding: 20px 24px 4px;
+  text-align: center;
+  @include mq(phone) {
+    padding: 20px 24px 4px;
+    text-align: start;
+  }
 }
 .categories__type {
-  width: 322px;
-  height: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--gray);
   margin: 4px 24px 20px;
+  text-align: center;
+  @include mq(phone) {
+    text-align: start;
+  }
 }

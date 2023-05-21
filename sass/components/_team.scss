@@ -1,13 +1,10 @@
-.bg-section {
+.section--team {
   width: 100%;
   height: auto;
   background: var(--bg-LightGray);
-  padding: 60px 0;
   margin: 0 auto;
   @include mq(desktop) {
     max-width: 1600px;
-    height: 708px;
-    margin-top: 94px;
   }
 }
 .team-container {
@@ -15,9 +12,7 @@
   flex-wrap: wrap;
   gap: 30px;
 }
-.middle-title--team {
-  margin-bottom: 50px;
-}
+
 .team-card {
   width: 450px;
   height: auto;
