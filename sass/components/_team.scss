@@ -3,9 +3,6 @@
   height: auto;
   background: var(--bg-LightGray);
   margin: 0 auto;
-  @include mq(desktop) {
-    max-width: 1600px;
-  }
 }
 .team-container {
   display:flex;

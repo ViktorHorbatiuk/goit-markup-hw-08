@@ -63,7 +63,6 @@
   background-size: cover;
   background-position: center;
   @include mq(desktop) {
-    max-width: 1600px;
     height: 600px;
   }
 }
