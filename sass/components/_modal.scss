@@ -175,6 +175,7 @@
   top: 18px;
 }
 }
+ 
 .modal__checkbox {
   position: absolute;
   top: 420px;
@@ -192,12 +193,15 @@
   &::before {
     position: absolute;
     left: -24px;
-    top: -3px;
+    top: 4px;
     content: "";
-    width: 14px;
-    height: 13px;
+    width: 13px;
+    height: 12px;
     border: 2px solid var(--black-main);
     border-radius: 2px;
+    @include mq(phone) {
+      top: -1px;
+    }
     @include mq(desktop) {
       top: 3px;
     }
@@ -221,8 +225,11 @@
 }
 .checkbox-icon {
   position: absolute;
-  top: -1px;
+  top: 6px;
   left: -23px;
+  @include mq(phone) {
+     top: 1px;
+  }
   @include mq(desktop) {
     top: 5px;
   }

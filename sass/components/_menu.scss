@@ -27,6 +27,16 @@
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .menu-container.is-open {
   transform: translateX(0);
@@ -34,7 +44,7 @@
 .menu-container .menu-toggle {
   position: fixed;
   top: 21px;
-  right: 26px;
+  right: 65px;
   fill: var(--black-main);
 }
 .menu-container a {
